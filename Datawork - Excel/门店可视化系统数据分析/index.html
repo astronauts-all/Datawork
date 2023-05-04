@@ -1,0 +1,218 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>健之佳公司旗下门店</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<link rel="stylesheet" href="css/comon0.css">
+</head>
+<body>
+<div class="loading">
+  <div class="loadbox"> <img src="images/loading.gif"> 页面加载中... </div>
+</div>
+<div class="head">
+  <h1>健之佳公司旗下门店</h1>
+  <div class="time" id="showTime">2019/11/29 0:12:42</div>
+		<script>
+var t = null;
+    t = setTimeout(time,1000);//開始运行
+    function time()
+    {
+       clearTimeout(t);//清除定时器
+       dt = new Date();
+		var y=dt.getFullYear();
+		var mt=dt.getMonth()+1;
+		var day=dt.getDate();
+       var h=dt.getHours();//获取时
+       var m=dt.getMinutes();//获取分
+       var s=dt.getSeconds();//获取秒
+		var t = null;
+       document.getElementById("showTime").innerHTML = y+"/"+Appendzero(mt)+"/"+Appendzero(day)+" "+Appendzero(h)+":"+Appendzero(m)+":"+Appendzero(s)+"";
+        function Appendzero(obj){
+			if(obj<10) return "0" +""+ obj;
+			else return obj;
+		 }
+		t = setTimeout(time,1000); //设定定时器，循环运行     
+    } 
+
+</script>
+	
+</div>
+<div class="mainbox">
+  <ul class="clearfix">
+    <li>
+      <div class="boxall" style="height: calc(40% - .15rem)">
+        <div class="alltitle">门店数量NO.4 </div>
+        <div class="sycm">
+          <ul class="clearfix">
+            <li>
+              <h2>22%</h2>
+              <span>昆明</span></li>
+            <li>
+              <h2>7%</h2>
+              <span>重庆</span></li>
+            <li>
+              <h2>5%</h2>
+              <span>南宁</span></li>
+         
+            <li>
+              <h2>4%</h2>
+              <span>曲靖</span></li>
+           
+          </ul>
+        </div>
+        <div class="boxfoot"></div>
+      </div>
+      <div class="boxall" style="height: calc(60% - .15rem)">
+        <div class="alltitle">门店占比</div>
+   <div class="sycm sycm2">
+          <ul class="clearfix">
+            <li>
+              <h2>3475</h2>
+              <span>药店</span></li>
+            <li>
+              <h2>1571</h2>
+              <span>便利店</span></li>
+            <li>
+              <h2>5046</h2>
+              <span>总店数</span></li>
+            <li>
+              <h2>69%</h2>
+              <span>药店</span></li>
+            <li>
+              <h2>31%</h2>
+              <span>便利店</span></li>
+                            <li>
+              <h2>500</h2>
+              <span>审核中的门店</span></li>
+          </ul>
+        </div>
+        <div class="boxfoot"></div>
+      </div>
+      
+    </li>
+    <li>
+     <div style="position: relative">
+		<div class="barnav">
+			
+			 <div class="bar">
+        <div class="barbox">
+          <ul class="clearfix">
+            <li class="pulll_left counter">3475</li>
+            <li class="pulll_left counter">1571</li>
+            <li class="pulll_left counter">5046</li>
+          </ul>
+        </div>
+        <div class="barbox2">
+          <ul class="clearfix">
+            <li class="pulll_left">药店总数</li>
+            <li class="pulll_left">便利店总数</li>
+            <li class="pulll_left">总店数</li>
+          </ul>
+        </div>
+		  
+      </div>
+		</div>
+		 </div>
+      <div class="mapbox">
+		<div class="map">
+        <div class="map1"><img src="images/lbx.png"></div>
+        <div class="map2"><img src="images/jt.png"></div>
+        <div class="map3"><img src="images/map.png"></div>
+        <div class="map4" id="map_1"></div>
+      </div>
+		</div>
+    </li>
+    <li>
+		<div class="boxall" style="height: calc(50% - .15rem)">
+        <div class="alltitle">任务 <div class="pulll_right">
+			</div></div>
+        
+        <div class="boxnav" id="echart3"></div>
+        
+        <div class="boxfoot"></div>
+      </div>
+      <div class="boxall" style="height: calc(50% - .15rem)">
+        <div class="alltitle">门店位置</div><div class="wrap boxnav"><ul>
+<li><p><span>春苑分店</span><span>药店</span><span>经度:102.674175,纬度:25.043231</span></p></li>
+<li><p><span>大观商业城分店</span><span>药店</span><span>经度:102.697346,纬度:25.042766</span></p></li>
+<li><p><span>人民东路分店</span><span>药店</span><span>经度:102.726786,纬度:25.0431</span></p></li>
+<li><p><span>吴井路分店</span><span>药店</span><span>经度:102.722802,纬度:25.030424</span></p></li>
+<li><p><span>胜利花园分店</span><span>药店</span><span>经度:102.734132,纬度:25.055667</span></p></li>
+<li><p><span>江东花园分店</span><span>药店</span><span>经度:102.724289,纬度:25.074032</span></p></li>
+<li><p><span>苏家塘分店</span><span>药店</span><span>经度:102.692071,纬度:25.062244</span></p></li>
+<li><p><span>吉庆分店</span><span>药店</span><span>经度:102.710986,纬度:25.048128</span></p></li>
+<li><p><span>东风东路分店</span><span>药店</span><span>经度:102.736646,纬度:25.038587</span></p></li>
+<li><p><span>刘家营分店</span><span>药店</span><span>经度:102.692593,纬度:25.024348</span></p></li>
+<li><p><span>金实小区分店</span><span>药店</span><span>经度:102.731333,纬度:25.075115</span></p></li>
+<li><p><span>华龙分店</span><span>药店</span><span>经度:102.700675,纬度:25.026416</span></p></li>
+<li><p><span>环城南路分店</span><span>便利店</span><span>经度:102.7223,纬度:25.02463</span></p></li>
+<li><p><span>国贸分店</span><span>便利店</span><span>经度:102.730215,纬度:25.013003</span></p></li>
+<li><p><span>桃源街分店</span><span>便利店</span><span>经度:102.716836,纬度:25.046981</span></p></li>
+<li><p><span>茭菱路分店</span><span>便利店</span><span>经度:102.68924,纬度:25.049275</span></p></li>
+<li><p><span>鸣翠园分店</span><span>便利店</span><span>经度:102.738976,纬度:25.08334</span></p></li>
+<li><p><span>白云路分店</span><span>便利店</span><span>经度:102.736983,纬度:25.057067</span></p></li>
+</ul>
+      </div>
+        <div class="boxfoot"></div>
+      </div>
+    </li>
+  </ul>
+</div>
+	
+	<div class="mainbox2">
+  <ul class="clearfix">
+    <li>
+		
+		<div class="boxall" style="height: 100%">
+        <div class="alltitle">月销量达标门店
+			</div>
+       <div class="boxnav">
+		  <ul class="btbox">
+		   <li id="bt01"></li>
+		   <li id="bt02"></li>
+		   <li id="bt03"></li>
+		   <li id="bt04"></li>
+		   </ul>
+		  </div>
+        <div class="boxfoot"></div>
+      </div>
+		
+    </li>
+	  <li>
+		  <div class="boxall" style="height:100%">
+        <div class="alltitle">2022年门店新增的速率
+			  <div class="pulll_right sebtn" >
+
+			</div>
+			  </div>
+         <div class="boxnav" id="echart4"></div>
+        
+        
+        <div class="boxfoot"></div>
+      </div>
+	  </li>
+		</ul>
+		</div>
+
+<script language="JavaScript" src="js/js.js"></script> 
+<script type="text/javascript" src="js/echarts.min.js"></script> 
+<script type="text/javascript" src="js/china.js"></script> 
+<script type="text/javascript" src="js/area_echarts.js"></script> 
+<script src="js/jquery.liMarquee.js"></script> 
+<script>
+$(function(){
+	$('.wrap,.adduser').liMarquee({
+		direction: 'up',//身上滚动 
+		runshort: false,//内容不足时不滚动
+		scrollamount: 20//速度
+	});
+});
+	
+</script>
+
+<script type="text/javascript">
+		$('.counter').countUp();
+  </script>
+</body>
+</html>
